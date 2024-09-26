@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA en Diagnósticos Médicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">IA Medicina</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Introducción</a></li>
+                <li><a href="Diagnostico.html">IA en Diagnóstico Médico</a></li>
+                <li><a href="robotica.html">IA en Cirugías Robóticas</a></li>
+                <li><a href="genetica.html">IA y Genética</a></li>
+                <li><a href="conclusion.html">Conclusión</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <header>
+        <h1>INTELIGENCIA ARTIFICIAL Y DIAGNÓSTICO MÉDICO</h1>
+    </header>
+
+    <!-- Sección IA en Diagnóstico Médico -->
+    <div class="content-container">
+        <div class="text-box">
+            <h2>El Impacto de la IA en los Diagnósticos Médicos</h2>
+            <p>
+                La Inteligencia Artificial está revolucionando el campo de la medicina, especialmente en los diagnósticos médicos. A través de algoritmos avanzados y modelos de aprendizaje profundo, los sistemas de IA pueden analizar grandes cantidades de datos médicos, como imágenes, historiales clínicos y patrones de síntomas, para proporcionar diagnósticos precisos y rápidos.
+            </p>
+            <p>
+                Uno de los avances más significativos es en la interpretación de imágenes médicas. Por ejemplo, la IA ha demostrado ser altamente efectiva en la detección de enfermedades como el cáncer de mama, pulmón y piel, utilizando técnicas de análisis de imágenes como radiografías, tomografías computarizadas y resonancias magnéticas.
+            </p>
+            <p>
+                A pesar de estos avances, la IA no reemplaza completamente a los médicos. En su lugar, actúa como una herramienta poderosa que apoya la toma de decisiones clínicas.
+            </p>
+        </div>
+        <div class="media-box">
+            <img src="img6.jpg" alt="IA en Diagnóstico Médico">
+            <!-- Video de YouTube -->
+            <iframe width="590" height="350" 
+                src="https://www.youtube.com/embed/07_N3JouWok?si=7UZvmzEGKPCWaEfE"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+        
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 IA en Diagnósticos Médicos. Todos los derechos reservados.</p>
+        <p>Desarrollado por Valery Georgina Pinto Peña</p>
+    </footer>
+
+    <!-- Script para el menú hamburguesa -->
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show-nav');
+        });
+    </script>
+</body>
+</html>

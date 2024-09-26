@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA en la Medicina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>INTELIGENCIA ARTIFICIAL Y MEDICINA</h1>
+    </header>
+    
+    
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#introduccion">IA Medicina</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Introducción</a></li>
+                <li><a href="Diagnostico.html">IA en Diagnóstico Médico</a></li>
+                <li><a href="robotica.html">IA en Cirugías Robóticas</a></li>
+                <li><a href="genetica.html">IA y Genética</a></li>
+                <li><a href="conclusion.html">Conclusión</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+     <!-- Sección Introducción -->
+     <div class="container" id="introduccion">
+        <div class="box">
+            <img src="img5.jpg" alt="Introducción IA y Medicina">
+            <h2>IA en la Medicina: Introducción</h2>
+            <p>
+                Los algoritmos pueden analizar imágenes médicas (como radiografías, tomografías o resonancias magnéticas) con alta precisión...
+            </p>
+        </div>
+    </div>
+
+    <!-- Sección Diagnóstico -->
+    <div class="container" id="diagnostico">
+        <div class="box">
+            <img src="img6.jpg" alt="IA en Diagnóstico Médico">
+            <h2>IA en Diagnóstico Médico</h2>
+            <p>
+                La IA puede ser usada para diagnosticar enfermedades complejas como el cáncer, problemas cardiacos...
+            </p>
+        </div>
+    </div>
+
+    <!-- Sección Cirugías Robóticas -->
+    <div class="container" id="robotica">
+        <div class="box">
+            <img src="img3.jpg" alt="IA en Cirugías Robóticas">
+            <h2>IA en Cirugías Robóticas</h2>
+            <p>
+                Los avances en robótica y IA permiten que las cirugías sean más precisas, con menos riesgo...
+            </p>
+        </div>
+    </div>
+
+    <!-- Sección Genética -->
+    <div class="container" id="genetica">
+        <div class="box">
+            <img src="img4.jpg" alt="IA y Genética">
+            <h2>IA y Genética</h2>
+            <p>
+                La IA está revolucionando el análisis genético, permitiendo identificar patrones en secuencias de ADN...
+            </p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 IA en la Medicina. Todos los derechos reservados.</p>
+        <p>Desarrollado por Valery Georgina Pinto Peña</p>
+    </footer>
+    
+    <!-- Script para el menú hamburguesa -->
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show-nav');
+        });
+    </script>
+</body>
+</html>

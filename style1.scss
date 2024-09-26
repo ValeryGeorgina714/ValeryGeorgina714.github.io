@@ -1,0 +1,162 @@
+//Variables de colores
+$primary-color: #bd7b9f;
+$secondary-color: #ecf0f1;
+$text-color: #2c3e50;
+$nav-bg-gradient: linear-gradient(90deg, #df96df, #c556db);
+$footer-bg:#bd7b9f;
+$footer-text: #ecf0f1;
+
+// Estilos globales
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $secondary-color;
+    color: $text-color;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 5.5rem 0;
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+// Estilos de la barra de navegación
+nav {
+    background: $nav-bg-gradient;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+
+        .logo {
+            a {
+                color: white;
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-right: 20px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    padding: 8px 12px;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 5px 0;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+// Responsividad para el menú tipo hamburguesa
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        flex-direction: column;
+        background-color: $primary-color;
+        width: 100%;
+        transition: left 0.3s ease;
+
+        li {
+            margin: 0;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        &.show-nav {
+            left: 0;
+        }
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+// Estilos de las secciones
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto 20px; // Ajuste de margen para la barra fija
+    .box {
+        background-color: white;
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid $primary-color;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+        img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 15px;
+            color: $primary-color;
+            font-size: 1.8rem;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+// Estilos para el footer
+footer {
+    background-color: $footer-bg;
+    color: $footer-text;
+    text-align: center;
+    padding: 1rem 0;
+    p {
+        margin: 0;
+    }
+}
